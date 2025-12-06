@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quote Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>📖 Quote Saver 📖</h1>
+
+        <div class="nav-buttons">
+            <button id="btn-show-add">Add New Quote</button>
+            <button id="btn-show-list">View My Quotes</button>
+        </div>
+
+        <hr>
+
+        <div id="add-section">
+            <h3>Add a New Quote</h3>
+            <input type="text" id="input-author" placeholder="Name It.">
+            <br><br>
+            <textarea id="input-quote" rows="5" placeholder="Write here..."></textarea>
+            <br><br>
+            <button id="btn-save" class="save-btn">Save to Local-Storage</button>
+        </div>
+
+        <div id="list-section" style="display: none;">
+            <h3>Saved Quotes</h3>
+            <button id="btn-delete-all" class="delete-all-btn">Delete All</button>
+            
+            <ul id="my-list"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
